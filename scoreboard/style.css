@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  font-family: "Century Gothic", Arial;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: gainsboro;
+  padding-block-start: 2rem;
+}
+
+.container {
+  margin-inline: auto;
+  width: 72rem;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+header {
+  background-color: #11C5C5;
+  color: white;
+  position: relative;
+}
+
+header h1 {
+  text-align: center;
+  padding-block: 1rem;
+}
+
+header button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin-inline-end: 1rem;
+  border: none;
+  border-radius: .75rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #07768F;
+  transition: linear .175s;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #064e5e;
+}
+
+header button img {
+  width: 1.5rem;
+}
+
+main {
+  background-color: #2C3D50;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+}
+
+main .score {
+  color: white;
+}
+
+main .score span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .score span p {
+  font-size: 1rem;
+  background-color: #647E95;
+  padding: .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: linear .125s;
+  margin-inline-start: .5rem;
+}
+
+main .score span p:hover {
+  background-color: #85a6c3;
+}
+
+main .score .number {
+  font-weight: bold;
+  font-size: 12rem;
+}
+
+main .score span button {
+  width: 5rem;
+  height: 3rem;
+  margin: .25rem;
+  border: none;
+  font-size: 3rem;
+  font-family: cursive;
+  background-color: #C3DFEC;
+  color: #2C3D50;
+  border-radius: .75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: linear .125s;
+}
+
+main .score span button:hover {
+  background-color: #eaf8ff;
+}
