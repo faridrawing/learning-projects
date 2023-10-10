@@ -3,15 +3,13 @@
   font-family: "Century Gothic", Arial;
 }
 
-h1 {
-  font-size: 2.5rem;
-}
-
-.wrapper {
-  height: 100vh;
-  width: 100vw;
+body {
   background-color: gainsboro;
   padding-block-start: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 .container {

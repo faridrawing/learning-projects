@@ -14,7 +14,7 @@ scoreLeft.querySelector("span button.plus").addEventListener("click", () => {
 
 scoreLeft.querySelector("span button.minus").addEventListener("click", () => {
   let score = parseInt(scoreLeft.querySelector("span.number").textContent);
-  score--;
+  score = score == 0 ? (score -= 0) : (score -= 1);
   scoreLeft.querySelector("span.number").textContent = score;
 });
 
@@ -31,6 +31,6 @@ scoreRight.querySelector("span button.plus").addEventListener("click", () => {
 
 scoreRight.querySelector("span button.minus").addEventListener("click", () => {
   let score = parseInt(scoreRight.querySelector("span.number").textContent);
-  score--;
-  scoreRight.querySelector("span.number").textContent = score;
+  score = score == 0 ? (score -= 0) : (score -= 1);
+    scoreRight.querySelector("span.number").textContent = score;
 });
